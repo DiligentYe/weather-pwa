@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "pwa-weather-ca181",
+    "weather": "pwa-weather-ca181"
+  }
+}

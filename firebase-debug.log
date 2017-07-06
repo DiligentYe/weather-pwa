@@ -1,0 +1,56 @@
+[debug] [2017-07-05T11:21:38.231Z] ----------------------------------------------------------------------
+[debug] [2017-07-05T11:21:38.233Z] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-07-05T11:21:38.234Z] CLI Version:  3.9.1
+[debug] [2017-07-05T11:21:38.234Z] Platform:     darwin
+[debug] [2017-07-05T11:21:38.234Z] Node Version: v6.10.3
+[debug] [2017-07-05T11:21:38.234Z] Time:         Wed Jul 05 2017 19:21:38 GMT+0800 (CST)
+[debug] [2017-07-05T11:21:38.235Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-05T11:21:38.246Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-05T11:21:38.246Z] > authorizing via signed-in user
+[debug] [2017-07-05T11:21:38.248Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pwa-weather-ca181  
+ Wed Jul 05 2017 19:21:38 GMT+0800 (CST)
+[debug] [2017-07-05T11:21:39.579Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-05T11:21:39.580Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pwa-weather-ca181/tokens  
+ Wed Jul 05 2017 19:21:39 GMT+0800 (CST)
+[debug] [2017-07-05T11:21:40.426Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/yyp/Desktop/pwa/weather-pwa'...
+[info] 
+[debug] [2017-07-05T11:21:40.430Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/pwa-weather-ca181  
+ Wed Jul 05 2017 19:21:40 GMT+0800 (CST)
+[debug] [2017-07-05T11:21:41.636Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-05T11:21:41.637Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/360322211539/clients/_:getWebAppConfig  
+ Wed Jul 05 2017 19:21:41 GMT+0800 (CST)
+[debug] [2017-07-05T11:21:42.321Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-05T11:21:42.338Z] TypeError: Cannot read property 'public' of undefined
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2017-07-05T11:25:30.588Z] ----------------------------------------------------------------------
+[debug] [2017-07-05T11:25:30.591Z] Command:      /usr/local/bin/node /usr/local/bin/firebase serve
+[debug] [2017-07-05T11:25:30.591Z] CLI Version:  3.9.1
+[debug] [2017-07-05T11:25:30.591Z] Platform:     darwin
+[debug] [2017-07-05T11:25:30.591Z] Node Version: v6.10.3
+[debug] [2017-07-05T11:25:30.592Z] Time:         Wed Jul 05 2017 19:25:30 GMT+0800 (CST)
+[debug] [2017-07-05T11:25:30.592Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-07-05T11:25:30.604Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-07-05T11:25:30.604Z] > authorizing via signed-in user
+[debug] [2017-07-05T11:25:30.606Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/pwa-weather-ca181  
+ Wed Jul 05 2017 19:25:30 GMT+0800 (CST)
+[debug] [2017-07-05T11:25:32.031Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-05T11:25:32.032Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/pwa-weather-ca181/tokens  
+ Wed Jul 05 2017 19:25:32 GMT+0800 (CST)
+[debug] [2017-07-05T11:25:32.851Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/yyp/Desktop/pwa/weather-pwa'...
+[info] 
+[debug] [2017-07-05T11:25:32.854Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/pwa-weather-ca181  
+ Wed Jul 05 2017 19:25:32 GMT+0800 (CST)
+[debug] [2017-07-05T11:25:34.019Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-05T11:25:34.020Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/360322211539/clients/_:getWebAppConfig  
+ Wed Jul 05 2017 19:25:34 GMT+0800 (CST)
+[debug] [2017-07-05T11:25:35.223Z] <<< HTTP RESPONSE 200
+[debug] [2017-07-05T11:25:35.239Z] TypeError: Cannot read property 'public' of undefined
+[error] 
+[error] Error: An unexpected error has occurred.
