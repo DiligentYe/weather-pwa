@@ -117,11 +117,14 @@
     card.querySelector('.description').textContent = current.text;
     card.querySelector('.date').textContent = current.date;
     card.querySelector('.current .icon').classList.add(app.getIconClass(current.code));
-    card.querySelector('.current .temperature .value').textContent =Math.round(current.temp);
+    card.querySelector('.current .temperature .value').textContent =
+      Math.round(current.temp);
     card.querySelector('.current .sunrise').textContent = sunrise;
     card.querySelector('.current .sunset').textContent = sunset;
-    card.querySelector('.current .humidity').textContent = Math.round(humidity) + '%';
-    card.querySelector('.current .wind .value').textContent = Math.round(wind.speed);
+    card.querySelector('.current .humidity').textContent =
+      Math.round(humidity) + '%';
+    card.querySelector('.current .wind .value').textContent =
+      Math.round(wind.speed);
     card.querySelector('.current .wind .direction').textContent = wind.direction;
     var nextDays = card.querySelectorAll('.future .oneday');
     var today = new Date();
@@ -130,10 +133,13 @@
       var nextDay = nextDays[i];
       var daily = data.channel.item.forecast[i];
       if (daily && nextDay) {
-        nextDay.querySelector('.date').textContent = app.daysOfWeek[(i + today) % 7];
+        nextDay.querySelector('.date').textContent =
+          app.daysOfWeek[(i + today) % 7];
         nextDay.querySelector('.icon').classList.add(app.getIconClass(daily.code));
-        nextDay.querySelector('.temp-high .value').textContent = Math.round(daily.high);
-        nextDay.querySelector('.temp-low .value').textContent = Math.round(daily.low);
+        nextDay.querySelector('.temp-high .value').textContent =
+          Math.round(daily.high);
+        nextDay.querySelector('.temp-low .value').textContent =
+          Math.round(daily.low);
       }
     }
     if (app.isLoading) {
@@ -181,7 +187,6 @@
         }
       });
     }
-
     // Fetch the latest data.
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
@@ -212,6 +217,7 @@
   };
 
   // TODO add saveSelectedCities function here
+  // Save list of cities to localStorage.
   app.saveSelectedCities = function() {
     var selectedCities = JSON.stringify(app.selectedCities);
     localStorage.selectedCities = selectedCities;
@@ -324,6 +330,17 @@
   // TODO uncomment line below to test app with fake data
   // app.updateForecastCard(initialWeatherForecast);
 
+  /************************************************************************
+   *
+   * Code required to start the app
+   *
+   * NOTE: To simplify this codelab, we've used localStorage.
+   *   localStorage is a synchronous API and has serious performance
+   *   implications. It should not be used in production applications!
+   *   Instead, check out IDB (https://www.npmjs.com/package/idb) or
+   *   SimpleDB (https://gist.github.com/inexorabletash/c8069c042b734519680c)
+   ************************************************************************/
+
   // TODO add startup code here
   app.selectedCities = localStorage.selectedCities;
   if (app.selectedCities) {
@@ -345,11 +362,9 @@
   }
 
   // TODO add service worker code here
-  if( 'serviceWorker' in navigator) {
+  if ('serviceWorker' in navigator) {
     navigator.serviceWorker
-      .register('./service-worker.js')
-      .then(function () {
-        console.log('serviceWorker is register');
-      });
+             .register('./service-worker.js')
+             .then(function() { console.log('Service Worker Registered'); });
   }
 })();
